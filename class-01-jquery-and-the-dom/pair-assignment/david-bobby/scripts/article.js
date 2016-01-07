@@ -15,8 +15,12 @@ function Article (opts) {
 Article.prototype.toHtml = function() {
   var $newArticle = $('article.template').clone();
 
+  $newArticle.data('title', this.title);
   $newArticle.data('category', this.category);
-
+  $newArticle.data('author', this.author);
+  $newArticle.data('authorUrl', this.authorUrl);
+  $newArticle.data('publishedOn', this.publishedOn);
+  $newArticle.data('body', this.body);
   // TODO: Use jQuery to fill in the template with properties
   // from this particular Article instance. We need to fill in:
   // the author name and url, the article title and body, and the
@@ -24,6 +28,7 @@ Article.prototype.toHtml = function() {
 
   // Include the publication date as a 'title' attribute to show on hover:
   $newArticle.find('time[pubdate]').attr('title', this.publishedOn)
+  $newArticle.hover()
 
   // Display the date as a relative number of "days ago":
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago')
