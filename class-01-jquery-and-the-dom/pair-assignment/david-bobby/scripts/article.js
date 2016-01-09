@@ -17,7 +17,8 @@ Article.prototype.toHtml = function() {
   // from this particular Article instance. We need to fill in:
   // the author name and url, the article title and body, and the
   // publication date.
-  $newArticle.find('h1').html('title', this.title);
+  $newArticle.find('h1').html(this.title);
+  $newArticle.find('a').html(this.author);
   $newArticle.find('a').attr('href', this.authorUrl);
   // Include the publication date as a 'title' attribute to show on hover:
   $newArticle.find('time[pubdate]').attr('title', this.publishedOn);
