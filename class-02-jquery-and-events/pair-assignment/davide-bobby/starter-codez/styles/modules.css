@@ -1,6 +1,7 @@
-/* TODO: Give the site header a nice background color, from your selected color scheme. */
+/* TODO: Give the site header a nice background color, from your selected color scheme. DONE*/
 
 .site-header {
+  background-color: #FF6600;
   padding: .1em;
 }
 
@@ -18,9 +19,10 @@
 }
 
 /* TODO: Style the filters so they look good on small screens:
-    Use the full width, and remove the list bullet. */
+    Use the full width, and remove the list bullet. DONE (I THINK)*/
 
 #filters {
+  list-style: none;
   padding: 0;
 }
 

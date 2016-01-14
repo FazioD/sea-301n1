@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Blog</title>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="vendor/styles/skeleton.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
@@ -17,11 +18,10 @@
     </header>
     <nav class="main-nav">
       <ul>
-        <!-- TODO: Use one of the icons from the available set for each of these nav items... -->
-        <li class="tab" data-content="articles"><a href="#"> Home</a></li>
-        <li class="tab" data-content="about"><a href="#"> About</a></li>
-        <li><a href="http://twitter.com/brookr" target="_blank"> Twitter</a></li>
-        <li><a href="http://github.com/brookr" target="_blank"> GitHub</a></li>
+        <li class="tab icon-home" data-content="articles"><a href="#"> Home</a></li>
+        <li class="tab icon-happy2" data-content="about"><a href="#"> About</a></li>
+        <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
+        <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
       </ul>
     </nav>
     <main>
@@ -69,10 +69,9 @@
     <footer>
       &copy; 2015 Code Fellows | Static Blog | Happy Ipsum!
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
-    <!-- TODO: Link up the new js file that will manage the article "View". -->
+    <script src="scripts/articleView.js"></script>
   </body>
 </html>
