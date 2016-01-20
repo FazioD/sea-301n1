@@ -49,11 +49,11 @@ articleView.handleMainNav = function() {
     $('#' + $(this).data('content')).fadeIn();
   });
 
-  $('.main-nav .tab:first').click(); // Let's now trigger a click on the first .tab element, to set up the page.
+  $('.main-nav .tab:first').click();
 };
 
 articleView.setTeasers = function() {
-  $('.article-body *:nth-of-type(n+2)').hide(); // Hide elements beyond the first 2 in any artcile body.
+  $('.article-body *:nth-of-type(n+2)').hide(); 
 
   $('#articles').on('click', 'a.read-on', function(e) {
     e.preventDefault();
